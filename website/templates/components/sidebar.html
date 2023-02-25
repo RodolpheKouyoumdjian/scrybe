@@ -1,0 +1,321 @@
+{% macro sidebar() %}
+<div data-animation="over-left" class="sidebar-wrapper w-nav" data-easing2="ease" data-easing="ease"
+data-collapse="medium" data-w-id="e3b5855f-6277-057e-9411-47b56ea7154c" role="banner" data-duration="400"
+data-doc-height="1">
+<div>
+    <div class="sidebar-logo-section-container">
+        <a href="/" class="sidebar-logo-wrapper w-nav-brand">
+            <img src="{{ url_for('static', filename='images/full_logo.png') }}"
+                alt="Dashly X Webflow Template - Logo" class="sidebar-logo" />
+        </a>
+        <div data-w-id="683ea4b5-a351-5455-5fbb-b4f3bcbae885" class="sidebar-logo-icon-wrapper">
+            <img src="{{ url_for('static', filename='images/blaze.png') }}"
+                loading="eager" data-w-id="e3b5855f-6277-057e-9411-47b56ea71551"
+                alt="Dashly X Webflow Template - Logo" />
+        </div>
+        <div class="sidebar-collapse-icon-container">
+            <div data-w-id="e3b5855f-6277-057e-9411-47b56ea71553" class="sidebar-collapse-icon-inner-container">
+                <div class="sidebar-collapse-icon-bar"></div>
+                <div class="sidebar-collapse-icon-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="#" class="sidebar-mobile-icon w-inline-block">
+            <img src="{{ url_for('static', filename='images/blaze.png') }}"
+                loading="eager" alt="Dashly X Webflow Template - Logo" />
+        </a>
+        <nav role="navigation" class="sidebar-nav-menu w-nav-menu">
+            <div class="sidebar-menu-wrapper">
+                <div class="position-relative---z-index-1">
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea7155d"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Dashboard</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/dashboards/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/dashboards/reports"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Reports</a>
+                                            <a href="/dashboards/products"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Products</a>
+                                            <a href="/dashboards/tasks"
+                                                class="dropdown-link sidebar-link last w-dropdown-link">Tasks</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea71573"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Features</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/features/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/features/contacts"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Contacts</a>
+                                            <a href="/features/companies"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Companies</a>
+                                            <a href="/features/projects"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Projects</a>
+                                            <a href="/features/tasks"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Tasks</a>
+                                            <a href="/features/board"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Board</a>
+                                            <a href="/features/table"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Table</a>
+                                            <a href="/features/crypto"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Crypto</a>
+                                            <div class="dropdown-link sidebar-link hover-none">And many more
+                                                pages!</div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea71593"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Users</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/profiles/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/profiles/v1"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Profile
+                                                v1</a>
+                                            <a href="/profiles/v2"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Profile
+                                                v2</a>
+                                            <a href="/profiles/v3"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Profile
+                                                v3</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea715a9"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Pricing</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/pricing/pricing"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/pricing/v1"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Pricing
+                                                v1</a>
+                                            <a href="/pricing/v2"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Pricing
+                                                v2</a>
+                                            <a href="/pricing/v3"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Pricing
+                                                v3</a>
+                                            <a href="https://dashlytemplate.webflow.io/product/startup"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Pricing
+                                                single</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea715c1"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Integrations</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/integrations/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/integrations/integrations"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Integrations</a>
+                                            <a href="/integrations/integration-single"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Integrations
+                                                single</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="divider _40px bg-neutral-300"></div>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea715d6"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Settings</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/settings/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/settings/v1"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Settings
+                                                v1</a>
+                                            <a href="/settings/v2" aria-current="page"
+                                                class="dropdown-link sidebar-link w-dropdown-link w--current">Settings
+                                                v2</a>
+                                            <a href="/settings/v3"
+                                                class="dropdown-link sidebar-link last w-dropdown-link">Settings
+                                                v3</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea715ec"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Utility pages</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/utility-pages/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/utility-pages/sign-up"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Sign up</a>
+                                            <a href="/utility-pages/log-in"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Log in</a>
+                                            <a href="/utility-pages/email-confirmation"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Email
+                                                confirmation</a>
+                                            <a href="/utility-pages/notifications"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Notification
+                                                center</a>
+                                            <a href="/utility-pages/reset-password"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Reset
+                                                password</a>
+                                            <a href="/utility-pages/privacy-policy"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Privacy
+                                                policy</a>
+                                            <a href="https://dashlytemplate.webflow.io/404"
+                                                class="dropdown-link sidebar-link w-dropdown-link">404 Not
+                                                found</a>
+                                            <a href="https://dashlytemplate.webflow.io/401"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Password
+                                                protected</a>
+                                            <a href="/utility-pages/style-guide"
+                                                class="dropdown-link sidebar-link w-dropdown-link">UI Kit</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul role="list" class="sidebar-nav-menu-list mg-bottom-160px">
+                        <li class="sidebar-nav-list-item">
+                            <div data-hover="false" data-delay="0"
+                                data-w-id="e3b5855f-6277-057e-9411-47b56ea7160c"
+                                class="dropdown-wrapper sidebar-dropdown w-dropdown">
+                                <div class="dropdown-toggle sidebar-dropdown w-dropdown-toggle">
+                                    <div class="sidebar-dropdown-text-container">
+                                        <div class="dashly-custom-icon sidebar-link-icon"></div>
+                                        <div class="sidebar-dropdown-text">Template pages</div>
+                                    </div>
+                                    <div class="line-rounded-icon sidebar-dropdown-arrow"></div>
+                                </div>
+                                <nav class="dropdown-column-wrapper sidebar-dropdown w-dropdown-list">
+                                    <div class="sidebar-dropdown-inner-wrapper">
+                                        <div>
+                                            <a href="/template-pages/all-pages"
+                                                class="dropdown-link sidebar-link w-dropdown-link">All pages</a>
+                                            <a href="/template-pages/start-here"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Start
+                                                here</a>
+                                            <a href="/template-pages/licenses"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Licenses</a>
+                                            <a href="/template-pages/changelog"
+                                                class="dropdown-link sidebar-link w-dropdown-link">Changelog</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a data-w-id="e3b5855f-6277-057e-9411-47b56ea71620"
+                    href="https://webflow.com/templates/html/dashly-x-dashboard-website-template"
+                    class="btn-primary width-100 sidebar-button w-button">
+                    Get template
+                    <span class="line-rounded-icon link-icon-right mg-left-4px"></span>
+                </a>
+            </div>
+            <div class="sidebar-menu-collapsed-overlay"></div>
+        </nav>
+        <div class="hamburger-menu-wrapper sidebar w-nav-button">
+            <div class="hamburger-menu-bar top sidebar"></div>
+            <div class="hamburger-menu-bar bottom sidebar"></div>
+        </div>
+    </div>
+</div>
+</div>
+{% endmacro %}

@@ -1,0 +1,23 @@
+{% macro editingForm(formTextConfig) %}
+<!-- Title -->
+    {% for input, inputContent in formTextConfig.inputs.items() %}
+        <div id="w-node-_1deec7fa-ed7c-7cf5-71b0-9e1ae78d4b71-cbcf4894">
+            <!-- Label for input -->
+            <label for="{{ inputContent['inputId'] }}" class="text-200 mg-bottom-10px color-neutral-700">
+                {{ inputContent['label'] }}
+            </label>
+
+            <!-- Input with placeholder -->
+            <input required type="text" class="input w-input" id="{{ inputContent['inputId'] }}" maxlength="256" placeholder="{{ inputContent['inputPlaceHolder'] }}"/>
+        </div>
+    {% endfor %}
+
+    <div class="generatedTextContainer{{ formTextConfig.generateButtonName }}" id="w-node-_1deec7fa-ed7c-7cf5-71b0-9e1ae78d4b71-cbcf4894">
+
+    </div>
+
+    
+
+    
+    <br>
+{% endmacro %}

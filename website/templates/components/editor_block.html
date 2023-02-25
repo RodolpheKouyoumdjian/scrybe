@@ -1,0 +1,48 @@
+{% macro editor_block(id) %}
+
+<!-- TEXT EDITOR -->
+<div id="w-node-_1deec7fa-ed7c-7cf5-71b0-9e1ae78d4b71-cbcf4894">
+    <label for="Message-10" class="text-200 mg-bottom-10px color-neutral-700">Editor</label>
+
+    <div id="loadingAnimationContainer"></div>
+
+    <button onclick="readabilityScore('{{ id }}')">
+        press
+    </button>
+
+    <!-- Some functions we can add such as rephrase, summarize, expand... -->
+    <div class="text-editing-buttons">
+        <span class="material-symbols-outlined" style="color: rgb(90, 100, 90);">
+            info
+
+            <span class="tooltip text-200 color-neutral-700" style="z-index: 100;">
+                You can expand, summarize or<br>rephrase your selection here!
+            </span>
+        </span>
+
+        <button class="modifyButtonsContainer" onclick="modifyTextButtons('{{ id }}', '_lengthenText')">
+            <span class="material-symbols-outlined lengthen-text">
+                open_with
+            </span>
+        </button>
+
+        <button class="modifyButtonsContainer" onclick="modifyTextButtons('{{ id }}', '_summarizeText')">
+            <span class="material-symbols-outlined summarize-text">
+                zoom_in_map
+            </span>
+        </button>
+
+        <button class="modifyButtonsContainer" onclick="modifyTextButtons('{{ id }}', '_rephraseText')">
+            <span class="material-symbols-outlined rephrase-text">
+                sync
+            </span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div id="firepad-container" name="Message-10" data-name="Message 10" class="text-area w-input" style="height: 50%;">
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

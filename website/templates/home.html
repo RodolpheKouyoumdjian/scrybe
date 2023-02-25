@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <p>Home</p>
+
+    <form method="POST">
+        <button name="button" value="go_to_dashboard">
+            go to dashboard
+        </button>
+
+        <button name="button" value="go_to_sign_in">
+            go to sign in
+        </button>
+
+        <button name="button" value="go_to_sign_up">
+            go to sign up
+        </button>
+
+        <button name="button" value="go_to_editor">
+            go to editor
+        </button>
+    </form>
+
+    <a name="button" href="{{url_for('projects.projectsBackend')}}">
+        go to projects
+    </a>
+
+
+
+
+    <div id="output-div">a</div>
+</body>
+
+</html>

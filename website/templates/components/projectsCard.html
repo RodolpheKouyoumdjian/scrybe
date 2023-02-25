@@ -1,0 +1,77 @@
+{% macro projectsCard(title, description, totalWordsGenerated, wordsGeneratedThisMonthPercent, totalImagesCreated, imagesCreatedThisMonthPercent) %}
+<!-- Inner progress bar gives error in code but works in practice, it has been tested -->
+
+<script>
+    function redirectToEditor() {
+        console.log('{{ title }}')
+        window.location.href = "{{ url_for('editor.editorBackend', projectName=title) }}"
+    }
+</script>
+
+<div id="w-node-fb60185b-ce41-07c7-2e76-bf915ab939ee-19413528" class="module projects" 
+onclick="redirectToEditor()" style="cursor: pointer; height: 100%">
+    <input type="hidden" name="projectCardName" value="{{ title }}">
+    <div class="text-400 bold mg-bottom-12px">
+
+        <!-- TITLE OF PROJECT -->
+        <span class="color-neutral-800">{{ title }}</span>
+    </div>
+
+    <!-- DESCRIPTION OF PROJECT -->
+    <p class="mg-bottom-0">
+        {{ description }}
+    </p>
+    <div class="divider _24px"></div>
+
+    <!-- Some stats -->
+
+    <!-- Number of words generated -->
+    <div class="mg-bottom-24px mg-top-auto">
+        <div class="text-200 medium mg-bottom-8px">
+            <span class="color-neutral-800">Total words generated</span>
+        </div>
+        <div class="text-200" >{{ totalWordsGenerated }}</div>
+
+        <br>
+
+        <div class="text-200 medium mg-bottom-8px">
+            <span class="color-neutral-800">This month only</span>
+        </div>
+
+        <div class="flex align-center gap-column-12px">
+            <div class="progress-bar">
+                <div class="inner-progress-bar" style="width: {{ wordsGeneratedThisMonthPercent }}%;"></div>
+            </div>
+
+            
+            <div class="text-100 medium color-neutral-500">{{ wordsGeneratedThisMonthPercent }}%</div>
+        </div>
+    </div>
+
+
+    <!-- Number of images created -->
+    <div class="mg-bottom-24px">
+        <div class="text-200 medium mg-bottom-6px">
+            <span class="color-neutral-800">Images created</span>
+        </div>
+
+        <div class="text-200">
+            {{ totalImagesCreated }}
+        </div>
+
+        <br>
+
+        <div class="text-200 medium mg-bottom-8px">
+            <span class="color-neutral-800">This month only</span>
+        </div>
+
+        <div class="flex align-center gap-column-12px">
+            <div class="progress-bar">
+                <div class="inner-progress-bar" style="width: {{ imagesCreatedThisMonthPercent }}%;"></div>
+            </div>
+            <div class="text-100 medium color-neutral-500">{{ imagesCreatedThisMonthPercent }}%</div>
+        </div>
+
+    </div>
+</div>
+{% endmacro %}

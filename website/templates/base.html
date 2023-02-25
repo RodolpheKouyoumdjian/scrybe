@@ -1,0 +1,49 @@
+{% from 'components/editor_block.html' import editor_block %}
+{% from 'components/navbar.html' import navbar %}
+{% from 'components/sidebar.html' import sidebar %}
+{% from 'components/currency_settings.html' import currency_settings %}
+{% from 'components/editingForm.html' import editingForm %}
+{% from 'components/projectsCard.html' import projectsCard %}
+
+<html lang="en" data-wf-site="6260849a6eab2a733e282630" data-wf-page="{{ wf_page }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Remix icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  {% block title %}
+  {% endblock %}
+
+  {% block head %}
+  {% endblock %}
+
+  {{ currency_settings() }}
+
+  <!-- CHANGE SELECTOR COLOR -->
+  <style>
+    ::selection {
+      background-color: var(--select-color);
+    }
+
+    ::-moz-selection {
+      /* Code for Firefox */
+      background-color: var(--select-color);
+    }
+  </style>
+
+</head>
+
+{% block body %}
+{% endblock %}
+
+</html>
